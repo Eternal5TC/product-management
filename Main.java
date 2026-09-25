@@ -208,8 +208,8 @@ public class Main {
             if ( p instanceof Discountable){
                 Discountable d = (Discountable) p ;
                 System.out.printf("%s (%s): $%.2f -> $%.2f%n", p.getName(), p.getId(), p.getPrice(), d.getDiscountedPrice());
+                foundDiscount = true;
             }
-            foundDiscount = true;
         }
 
         if (!foundDiscount){
